@@ -1,48 +1,107 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>JavaScript Calculator</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-<div class="calculator">
-  <div class="input" id="input"></div>
-  <div class="buttons">
-    <div class="operators">
-      <div>+</div>
-      <div>-</div>
-      <div>&times;</div>
-      <div>&divide;</div>
-    </div>
-    <div class="leftPanel">
-      <div class="numbers">
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-      </div>
-      <div class="numbers">
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-      </div>
-      <div class="numbers">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
-      <div class="numbers">
-        <div>0</div>
-        <div>.</div>
-        <div id="clear">C</div>
-      </div>
-    </div>
-    <div class="equal" id="result">=</div>
-  </div>
-</div>
-  <script  src="script1.js"></script>
 
+<body>
+    <div class="row" id="simple">
+        <div class="calculator pad">
+            <div class="input" id="input"></div>
+            <div class="buttons" id="but">
+                <div class="operators" id="operators">
+                    <div>+</div>
+                    <div>-</div>
+                    <div>&times;</div>
+                    <div>&divide;</div>
+                </div>
+                <div class="leftPanel">
+                    <div class="numbers" id="numbers">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="numbers" id="numbers">
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
+                    <div class="numbers" id="numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div class="numbers" id="numbers">
+                        <div>0</div>
+                        <div>.</div>
+                        <div id="clear">C</div>
+                    </div>
+                </div>
+                <div class="equal" id="result">=</div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="row ">
+        <div class="calculator flex hidden " id="complex">
+            <div class="input" id="input1"></div>
+            <div class="buttons " id="but1">
+                <div class="operatorscomplex" id="opcomplex">
+                    <div>+</div>
+                    <div>-</div>
+                    <div>&times;</div>
+                    <div>&divide;</div>
+                </div>
+                <div class="operatorscomplex" id="complex">
+                    <div>log</div>
+                    <div>√</div>
+                    <div>^</div>
+                    <div>!</div>
+                </div>
+                <div class="leftPanel">
+                    <div class="numberscomplex" id="complex">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div class="numberscomplex" id="complex">
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                    </div>
+                    <div class="numberscomplex" id="complex">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div class="numberscomplex" id="complex">
+                        <div>0</div>
+                        <div>.</div>
+                        <div id="clear1">C</div>
+                    </div>
+                    
+                </div>
+                <div class="equal" id="result1">=</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <button class="btn btn-primary pad" id="button">COMPLEX CALC</button>
+
+    </div>
+
+
+    <script src="script1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>

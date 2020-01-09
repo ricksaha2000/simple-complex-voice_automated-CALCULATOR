@@ -9,6 +9,15 @@ body {
   -ms-user-select: none;
 }
 
+
+.hidden
+{
+    display: none;
+}
+.pad
+{
+    
+}
 .calculator {
   padding: 20px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
@@ -91,6 +100,7 @@ body {
   font-weight: bold;
 }
 
+
 div.equal {
   display: inline-block;
   border: 1px solid #3079ED;
@@ -114,5 +124,65 @@ div.equal:hover {
 }
 
 div.equal:active {
+  font-weight: bold;
+}
+
+
+
+/*               */
+
+.operatorscomplex {}
+
+.operatorscomplex div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operatorscomplex div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operatorscomplex div:active {
+  font-weight: bold;
+}
+
+/*
+.leftPanel {
+  display: inline-block;
+}
+*/
+
+.numberscomplex div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numberscomplex div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numberscomplex div:active {
   font-weight: bold;
 }
